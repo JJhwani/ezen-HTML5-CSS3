@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        //콜백 함수 -> 매개변수에게 함수를 전달.
+        function callThreeTimes(callback){
+            for(let i=0; i<3; i++){
+                callback(i);
+            }
+        }
+
+        function print(i){
+            console.log(`${i}번째 함수 호츨`);
+
+        }
+        callThreeTimes(print);
+
+    </script> -->
+    <!-- <script>
+        let num = [250,44,89,100,200];
+        num.forEach( function(value,index,array){
+            console.log(`${index}번째 요소:${value}`);
+        })
+    </script> -->
+    <!-- <script>
+        let num = [5,4,9,10,2];
+        num.forEach( function(value,index,array){
+            return value*value
+        })
+        num.forEach(console.log);
+    </script> -->
+    <!-- <script>
+        let num = [5,4,9,10,2];
+        let num2 = num.filter(function( value){
+            return value %2==0;
+        })
+
+       console.log(`원 배열 ${num}`);
+       console.log(`filter 배열 ${num2}`);
+    </script> -->
+    <script>
+        let num = [5,4,9,10,2];
+        
+        num
+        .filter( (value)=>value %2==0).map((value)=>value*value)
+        .forEach((value)=>{console.log(value)})
+
+    </script>
+</body>
+
+</html>
