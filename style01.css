@@ -1,0 +1,97 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 2.0;
+    color: red;
+    font-family: 돋움;
+}
+
+.goldText {
+    color: gold;
+}
+
+#textid{
+    color: blueviolet;
+} */
+
+/* p.229
+p {
+    line-height: e1.8;
+}
+
+a {
+   text-decoration: none; /*밑줄 없앰 
+}
+
+.edited {
+    text-decoration: line-through; /*취소선 
+}*/
+
+
+/* p.232
+.shadow1 {
+    color: orange;
+    text-shadow: 1px 1px;
+}
+.shadow2 {
+    text-shadow: 5px 5px 3px #f00;
+}
+.shadow3 {
+    color: #fff;
+    text-shadow: 7px -7px 5px #000;
+}*/
+
+/* p.248
+.sqbullet {
+    list-style-type: square;
+}
+
+.nobullet {
+    list-style-type: none;
+}*/
+
+/*#grad1 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(red,yellow);
+}
+
+#grad2 {
+    height: 200px;
+    background-color: red;
+    background-image: linear-gradient(blue, green);
+}*/
+
+/* p.298
+.box1 {
+    width: 400px;
+    height: 100px;
+    background-color: #ff6a00;
+}
+
+.box2 {
+    width: 50%;
+    height: 100px;
+    background-color: #0094ff;
+}
+
+div {
+    margin: 10px;
+}*/
+
+/* p.3 */
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #0094ff;
+    margin: 10px;
+    display: inline;
+}
