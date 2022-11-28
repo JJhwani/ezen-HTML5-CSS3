@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <title>Document</title>
+    <style>
+        .box1{
+            float: left;
+            width: 100px;
+            background-color: #ffd800;
+            margin-right: 10px;
+            padding: 20px;
+        }
+        .box2{
+            position: relative;
+            left: -50px;
+            top: 30px;
+            width: 300px;
+            background-color: #0094ff;
+            float: left;
+            padding: 20px;
+        }
+        img{
+            margin: 10px;
+            padding: 50px;
+            border: 1px solid black;
+        }
+        .invisible{
+            /* visibility: hidden; */
+            display: none;
+        }
+        div#wrapper{
+            position: relative;
+        }
+        #b1{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: aqua;
+            top: 50px;
+            z-index: 1;
+        }
+        #b2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: blueviolet;
+            bottom: 75px;
+            left: 25px;
+            z-index: 3;
+        }
+        #b3{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: chocolate;
+            bottom: 125px;
+            left: 50px;
+            z-index: 2;
+        }
+    </style>
+    </head>
+<body>
+    <h2>p.342 relative 값으로 요소 배치하기</h2>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <br><br><br><br>
+    <h2>p.345 특정 요소 화면에서 감추기</h2>
+    <img src="images/forest.jpg" width="200" height="200">
+    <img src="images/forest.jpg" class="invisible" width="200" height="200">
+    <img src="images/forest.jpg" width="200" height="200">
+    <br><br>
+    <h2>p.347 여러 요소의 쌓는 순서 조절하기</h2>
+    <div id="wrapper">
+        <div class="box" id="b1">1</div>
+        <div class="box" id="b2">2</div>
+        <div class="box" id="b3">3</div>
+    </div>  
+</body>
+</html>
