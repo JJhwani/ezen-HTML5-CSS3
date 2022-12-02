@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            margin: 30px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>점심 메뉴 고르기</h1>
+    <button id="btn">click</button>
+    <div id="box">오늘의 메뉴는?</div>
+
+    <script>
+        btn.onclick = function(){
+            let menu = ["자장면","돈가스","식빵","라면","우동","김밥"];
+            let num = Math.floor(Math.random()*menu.length);
+            //consol.log(num);
+            box.innerHTML = menu[num];
+        }
+    </script>
+</body>
+</html>
