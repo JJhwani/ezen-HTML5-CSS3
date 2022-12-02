@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{ width: 640px; margin: 0 auto;}
+        #order{width: 640px; margin: 0 auto; }
+        fieldset{ width:640px; margin: 0 0 20px 0; padding: 0; border: 1px solid #eee; }
+        #total{ border: none; font-size: 16px; font-weight: bold;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="order">        
+            <h1>피자 주문</h1>
+            <img src="images/pizza.jpg" width="640px" height="315px">
+        </div>
+        <form>
+            <fieldset>
+                <legend>사이즈</legend>
+                <label><input type="checkbox" name="Medium" class="size" value="20000">Medium - 20000원</label>
+                <label><input type="checkbox" name="Large" class="size" value="24000">Large - 24000원</label>
+            </fieldset>
+            <fieldset>
+                <legend>사이드 메뉴</legend>
+                <label><input type="checkbox" name="피클" class="side_menu" value="800">피클 800원</label>
+                <label><input type="checkbox" name="칠리 소스" class="side_menu" value="300">칠리 소스 300원</label>
+                <label><input type="checkbox" name="딥핑 소스" class="side_menu" value="200">딥핑 소스 200원</label>
+                <label><input type="checkbox" name="치즈스틱" class="side_menu" value="4800">치즈스틱 4개 4800원</label>
+                <label><input type="checkbox" name="콘 샐러드" class="side_menu" value="2400">콘 샐러드 2400원</label>
+            </fieldset>
+            <fieldset>
+                <legend>합계</legend>
+                <input type="text" id="total" class="price" readonly>
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        let price = 0;
+        let chkMenu = document.querySelectorAll("input");
+        let total = document.querySelector("#total");
+        total.value = price+"원";
+
+        for(i=0; i<chkMenu.length; i++){
+            chkMenu[i].onclick = function(){
+                if(this.checked==true){
+                    price += parseInt(this.value);
+                }
+                else{
+                    price -= parseInt(this.value);
+                }
+                total.value = price+"원";
+            }            
+        }
+    </script>
+</body>
+</html>
